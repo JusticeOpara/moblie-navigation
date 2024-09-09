@@ -1,19 +1,14 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-// ... existing code ...
-
-
 const MobileNavigation = ({ navigation }) => {
   const [currentItems, setCurrentItems] = useState(navigation);
   const [navigationStack, setNavigationStack] = useState([]);
 
   const handleItemClick = (item) => {
     if (item.url) {
-      // Navigate to URL
       window.location.href = item.url;
     } else if (item.children) {
-      // Update navigation stack and current items
       setNavigationStack([...navigationStack, currentItems]);
       setCurrentItems(item.children);
     }
@@ -63,5 +58,5 @@ MobileNavigation.propTypes = {
   navigation: PropTypes.array.isRequired,
 };
 
-// ... existing code ...
+
 export default MobileNavigation;
