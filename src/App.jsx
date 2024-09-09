@@ -1,4 +1,3 @@
-import React from 'react';
 import MobileNavigation from './component/MoblieNavigation';
 import './App.css'
 import { navigation } from '../utils';
