@@ -1,6 +1,6 @@
 import MobileNavigation from './component/MoblieNavigation';
 import './App.css'
-import { navigation } from '../utils';
+import { navigation } from './utils';
 
 const App = () => {
   return (

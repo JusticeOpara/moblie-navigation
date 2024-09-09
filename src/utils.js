@@ -27,7 +27,7 @@ export const navigation = [
     ],
   },
   {
-    titles: "Services",
+    title: "Services",
     children: [
       {
         title: "Same Day Delivery",
